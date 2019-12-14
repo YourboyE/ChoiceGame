@@ -13,8 +13,12 @@
 		2819C4F723A550CE00C52FE7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2819C4F623A550CE00C52FE7 /* GameScene.swift */; };
 		2819C4F923A550CE00C52FE7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2819C4F823A550CE00C52FE7 /* GameViewController.swift */; };
 		2819C4FC23A550CE00C52FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2819C4FA23A550CE00C52FE7 /* Main.storyboard */; };
-		2819C4FE23A550D800C52FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2819C4FD23A550D800C52FE7 /* Assets.xcassets */; };
 		2819C50123A550D800C52FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2819C4FF23A550D800C52FE7 /* LaunchScreen.storyboard */; };
+		2819C50923A554EA00C52FE7 /* Appicon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2819C50823A554EA00C52FE7 /* Appicon.xcassets */; };
+		2819C50C23A562A400C52FE7 /* Sparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2819C50A23A562A400C52FE7 /* Sparks.sks */; };
+		2819C50D23A562A400C52FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2819C50B23A562A400C52FE7 /* Assets.xcassets */; };
+		2819C51023A56B0A00C52FE7 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819C50F23A56B0A00C52FE7 /* GameKit.framework */; };
+		2819C51323A56C6900C52FE7 /* CoinSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2819C51223A56C6900C52FE7 /* CoinSound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +29,13 @@
 		2819C4F623A550CE00C52FE7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2819C4F823A550CE00C52FE7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2819C4FB23A550CE00C52FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2819C4FD23A550D800C52FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2819C50023A550D800C52FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2819C50223A550D800C52FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2819C50823A554EA00C52FE7 /* Appicon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Appicon.xcassets; sourceTree = "<group>"; };
+		2819C50A23A562A400C52FE7 /* Sparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Sparks.sks; sourceTree = "<group>"; };
+		2819C50B23A562A400C52FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2819C50F23A56B0A00C52FE7 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		2819C51223A56C6900C52FE7 /* CoinSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CoinSound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2819C51023A56B0A00C52FE7 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +53,10 @@
 		2819C4E423A550CE00C52FE7 = {
 			isa = PBXGroup;
 			children = (
+				2819C50B23A562A400C52FE7 /* Assets.xcassets */,
 				2819C4EF23A550CE00C52FE7 /* ChoiceGame */,
 				2819C4EE23A550CE00C52FE7 /* Products */,
+				2819C50E23A56B0A00C52FE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +71,35 @@
 		2819C4EF23A550CE00C52FE7 /* ChoiceGame */ = {
 			isa = PBXGroup;
 			children = (
+				2819C51123A56C5A00C52FE7 /* Sounds */,
+				2819C50A23A562A400C52FE7 /* Sparks.sks */,
 				2819C4F023A550CE00C52FE7 /* AppDelegate.swift */,
 				2819C4F223A550CE00C52FE7 /* GameScene.sks */,
 				2819C4F423A550CE00C52FE7 /* Actions.sks */,
 				2819C4F623A550CE00C52FE7 /* GameScene.swift */,
 				2819C4F823A550CE00C52FE7 /* GameViewController.swift */,
 				2819C4FA23A550CE00C52FE7 /* Main.storyboard */,
-				2819C4FD23A550D800C52FE7 /* Assets.xcassets */,
 				2819C4FF23A550D800C52FE7 /* LaunchScreen.storyboard */,
+				2819C50823A554EA00C52FE7 /* Appicon.xcassets */,
 				2819C50223A550D800C52FE7 /* Info.plist */,
 			);
 			path = ChoiceGame;
+			sourceTree = "<group>";
+		};
+		2819C50E23A56B0A00C52FE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2819C50F23A56B0A00C52FE7 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2819C51123A56C5A00C52FE7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2819C51223A56C6900C52FE7 /* CoinSound.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +160,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2819C50923A554EA00C52FE7 /* Appicon.xcassets in Resources */,
+				2819C50C23A562A400C52FE7 /* Sparks.sks in Resources */,
 				2819C4FC23A550CE00C52FE7 /* Main.storyboard in Resources */,
 				2819C4F323A550CE00C52FE7 /* GameScene.sks in Resources */,
-				2819C4FE23A550D800C52FE7 /* Assets.xcassets in Resources */,
+				2819C51323A56C6900C52FE7 /* CoinSound.wav in Resources */,
+				2819C50D23A562A400C52FE7 /* Assets.xcassets in Resources */,
 				2819C50123A550D800C52FE7 /* LaunchScreen.storyboard in Resources */,
 				2819C4F523A550CE00C52FE7 /* Actions.sks in Resources */,
 			);
@@ -302,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DreamDev.ChoiceGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DreamDev.ChoiceGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
